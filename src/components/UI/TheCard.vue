@@ -1,12 +1,9 @@
 <template>
   <div class="card">
-    <div class="card-header">
-      <slot name="header"></slot>
-    </div>
     <span class="card-name">{{name}}</span>
     <span class="card-title">{{title}}</span>
     <div class="card-body">
-      <slot name="body"></slot>
+      <slot></slot>
     </div>
   </div>
 </template>

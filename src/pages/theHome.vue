@@ -1,12 +1,7 @@
 <template>
   <div class="card__wrapper" v-for="item in items" :key="item.id">
     <TheCard :name="`${item.lvl} lvl`" :title="item.title">
-      <template v-slot:header>
-        <h1>{{item.title}}</h1>
-      </template>
-      <template v-slot:body>
-        {{item.descr}}
-      </template>
+      {{ item.descr }}
     </TheCard>
   </div>
 </template>
