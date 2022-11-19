@@ -1,27 +1,27 @@
 export const process = {
-  dev: true,
-};
+  dev: true
+}
 
 export const site = {
-  home: process.dev ? "http://localhost:8080/" : "http://ivanov.ru/",
-};
+  home: process.dev ? 'http://localhost:8080/' : 'http://ivanov.ru/'
+}
 
 export const app = {
-  title: "Template",
-};
+  title: 'Clash of Clansgi'
+}
 
 export const links = [
   {
-    tiltle: "Home",
-    alies: "home",
-    url: "/",
+    tiltle: 'Home',
+    alies: 'home',
+    url: '/'
   },
   {
-    tiltle: "About",
-    alies: "aboot",
-    url: "/about",
-  },
-];
+    tiltle: 'About',
+    alies: 'aboot',
+    url: '/about'
+  }
+]
 
 export const todos = [
   'Полная настройка на Vue CLI',
@@ -29,5 +29,5 @@ export const todos = [
   'Динамическая перересовка без перезагрущки старницы',
   'Динамический навбар и ссылки',
   'Хеши и моды для роустора',
-  'Настройка общего конфига',
+  'Настройка общего конфига'
 ]
