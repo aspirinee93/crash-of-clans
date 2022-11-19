@@ -7,7 +7,7 @@ export const site = {
 }
 
 export const app = {
-  title: 'Clash of Clansgi'
+  title: 'Clash of Clans'
 }
 
 export const links = [
