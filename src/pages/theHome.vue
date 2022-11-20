@@ -18,6 +18,7 @@ export default {
           id: 1,
           title: 'Archer',
           descr: 'archer archer archer archer archer archer',
+          img: require(''),
           lvl: 4
         },
         {
@@ -25,7 +26,7 @@ export default {
           title: 'Wizard',
           descr: 'wizard wizard wizard wizard wizard wizard',
           lvl: 5
-        }
+        },
       ]
     }
   }
