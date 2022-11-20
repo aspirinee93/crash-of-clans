@@ -1,7 +1,10 @@
 <template>
   <div class="card">
-    <span class="card-name">{{name}}</span>
-    <span class="card-title">{{title}}</span>
+    <div v-if="imgUrl" class="card-img__wraper">
+      <img class="card-img" :src="imgUrl" :alt="title" />
+    </div>
+    <span class="card-name">{{ name }}</span>
+    <span class="card-title">{{ title }}</span>
     <div class="card-body">
       <slot></slot>
     </div>
@@ -19,6 +22,9 @@ export default {
       type: String,
       required: true
     },
+    imgUrl: {
+      type: String
+    }
   }
 }
 </script>

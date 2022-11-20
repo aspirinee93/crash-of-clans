@@ -1,6 +1,6 @@
 <template>
   <div class="card__wrapper" v-for="item in items" :key="item.id">
-    <TheCard :name="`${item.lvl} lvl`" :title="item.title">
+    <TheCard :name="`${item.lvl} lvl`" :title="item.title" :imgUrl="item.img">
       {{ item.descr }}
     </TheCard>
   </div>
@@ -8,26 +8,13 @@
 
 <script>
 import TheCard from '@/components/UI/TheCard'
+import items from '@/seeders/items.js'
 
 export default {
   components: { TheCard },
   data() {
     return {
-      items: [
-        {
-          id: 1,
-          title: 'Archer',
-          descr: 'archer archer archer archer archer archer',
-          img: require(''),
-          lvl: 4
-        },
-        {
-          id: 2,
-          title: 'Wizard',
-          descr: 'wizard wizard wizard wizard wizard wizard',
-          lvl: 5
-        },
-      ]
+      items: items
     }
   }
 }
