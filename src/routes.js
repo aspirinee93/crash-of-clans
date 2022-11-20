@@ -5,6 +5,7 @@ const routerHistory = createWebHistory();
 import HomePage from "./pages/theHome";
 import AboutPage from "./pages/theAbout";
 import NotFoundPage from "./pages/theNotFound";
+import Item from "./pages/_itemAlias";
 
 const routers = createRouter({
   history: routerHistory,
@@ -18,6 +19,11 @@ const routers = createRouter({
       path: "/about",
       name: "about",
       component: AboutPage,
+    },
+    {
+      path: "/:itemAlias",
+      name: "itemAlias",
+      component: Item,
     },
     {
       // path: "/:PathMatch(.*)*",

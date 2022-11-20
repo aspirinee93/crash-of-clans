@@ -1,6 +1,11 @@
 <template>
   <div class="card__wrapper" v-for="item in items" :key="item.id">
-    <TheCard :name="`${item.lvl} lvl`" :title="item.title" :imgUrl="item.img">
+    <TheCard
+      :name="`${item.lvl} lvl`"
+      :title="item.title"
+      :imgUrl="item.img"
+      :link="`/${item.alias}`"
+    >
       {{ item.descr }}
     </TheCard>
   </div>
